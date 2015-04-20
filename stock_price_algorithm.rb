@@ -30,18 +30,18 @@ def get_max_profit(stock_prices_yesterday)
   stock_prices_yesterday.each_with_index do |current_price,index|
     next if index == 0
 
-      potential_profit = current_price - min_price
+    potential_profit = current_price - min_price
 
-      if potential_profit > max_profit
-        max_profit = potential_profit
-      end
+    if potential_profit > max_profit
+      max_profit = potential_profit
+    end
 
-      if current_price < min_price
-        min_price = current_price
-      end
-
+    if current_price < min_price
+      min_price = current_price
+    end
   end
-    p max_profit
+
+  p max_profit
 end
 
 get_max_profit(stock_prices_yesterday)
