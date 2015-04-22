@@ -43,6 +43,6 @@ p get_highest_product_of_three_int(array_two) == 500
 p get_highest_product_of_three_int(array_three) == 0
 
 # notes
-# will have an O(nlgn) time O(n) space #(note to self check for correctness)
+# O(nlgn) time O(n) space
 
 

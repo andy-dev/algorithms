@@ -15,14 +15,23 @@ array_of_integers = [ 1, 7, 3, 4]
 
 ###### CODE #######
 
+
   def get_product_integers(array_of_integers)
 
-
-    # get all products after the index
-    # get all products before the index
-
-
+    results = []
+    array_of_integers.each_with_index do |num1,index1|
+      product = 1
+      array_of_integers.each_with_index do |num2,index2|
+        next if index1 == index2
+        product *= num2
+      end
+      results << product
+    end
+    p results
 
   end
 
 get_product_integers(array_of_integers)
+
+# notes
+# O(n**2) time O(n) space
