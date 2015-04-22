@@ -21,7 +21,7 @@
   # Sort the array
   # multiply the last 3 integers--save result
   # multiply the first 2 and the last integer -- save result
-  # return highest resutl
+  # return highest result
 
   # lets work with a couple of possible arrays
 
