@@ -12,7 +12,7 @@
 
 ####### Code ######
 
-#brute force
+# Brute force
 
 def brute_fly_times(flight_length,array_movies)
   i = 0
@@ -41,7 +41,7 @@ p brute_fly_times(190, array_movies3) == false
 
 ####### Code ######
 
-#Greedy
+# Greedy
 
 def flight_length(flight_length, array_movies)
 
@@ -51,7 +51,7 @@ def flight_length(flight_length, array_movies)
   number_of_combinations = (array_movies.length).downto(1).inject(:*)/(((array_movies.length - 2).downto(1).inject(:*))*2)
 
   number_of_combinations.times do
-    if array_movies[first_movie_index].to_i + array_movies[next_movie_index].to_i == flight_length
+    if array_movies[first_movie_index] + array_movies[next_movie_index] == flight_length
       return true
     else
       next_movie_index +=1
