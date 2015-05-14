@@ -22,7 +22,7 @@ def brute_fly_times(flight_length,array_movies)
       return true if array_movies[i] + array_movies[j] == flight_length
       j += 1
     end
-    i+=1
+    i += 1
   end
   return false
 end
@@ -77,7 +77,7 @@ p flight_length(190, array_movies3) != true
 
 
 # Complexity
-# we go through the array once O(n) time and O(1) space? check
+# we go through the array more than once O(n) time and O(1) space? check
 
 
 ###### Code 3 Using a hash ######
