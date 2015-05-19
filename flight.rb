@@ -80,38 +80,6 @@ p flight_length(190, array_movies3) != true
 # we go through the array more than once O(n) time and O(1) space? check
 
 
-###### Code 3 Using a hash ######
 
-   # def get_two_movies_to_fill_flight(array_movies, flight_length):
-
-   #  movie_lengths_seen_hash = {}
-
-   #  for first_movie_length in movie_lengths
-
-   #    first_movie_length = array_movies[0]
-   #    second_movie_length = array_movies[1]
-
-   #    matching_second_movie_length = flight_length - first_movie_length
-
-   #    if matching_second_movie_length in hash return true
-   #    end
-
-   #    movie_lengths_seen_hash[first_movie_length] = True
-
-   #    return false
-
-
-   #  return False
-
-
-###### Driver Code ######
-
-# array_movies = [120, 90, 100]
-# array_movies2 = [120, 90, 100, 70, 60, 250]
-# array_movies3 = [120, 95, 100, 75, 60, 250]
-
-# p flight_length(190, array_movies) == true
-# p flight_length(190, array_movies2) == true
-# p flight_length(190, array_movies3) != true
 
 
