@@ -15,6 +15,7 @@ def bubble_sort(array)
         # temp = array[i]
         # array[i], = array[i+1]
         # array[i+1] = temp
+        #lines 14-17 are equivalent to line 19 below
         array[i], array[i+1] = array[i+1], array[i]
         swapped = true
       end
