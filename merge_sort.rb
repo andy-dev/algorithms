@@ -1,5 +1,5 @@
-Merge sort is all about divide and conquer
-Sort the left half of a and then the right half and combine them
+# Merge sort is all about divide and conquer
+# Sort the left half of a and then the right half and combine them
 
 def merge_sort(arr)
   def merge(left_sorted, right_sorted)
