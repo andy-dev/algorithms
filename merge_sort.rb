@@ -10,32 +10,51 @@ def merge_sort(arr)
     loop do
       break if r >= right_sorted.length && l >= left_sorted.length
 
-      if r >= right_sorted.length || (l < left_sorted.length && left_sorted[l] < right_sorted[r])
+      if r >= right_sorted.length || ((l < left_sorted.length) && (left_sorted[l] < right_sorted[r]))
         result << left_sorted[l]
         l += 1
+        p "Result added from left"
+        p result
       else
         result << right_sorted[r]
         r += 1
+        p "Result added from right"
+        p result
       end
     end
-
+    p "last result from merge"
+    p result
     return result
   end
 
   def mergesort_iter(array_sliced)
     return array_sliced if array_sliced.length <= 1
 
+    p "array sliced length"
+    p array_sliced.length
+
     mid = array_sliced.length/2 - 1
+
     left_sorted = mergesort_iter(array_sliced[0..mid])
+
+    p "*****LEFT SORTED ********"
+    p left_sorted
     right_sorted = mergesort_iter(array_sliced[mid+1..-1])
+    p "*****Right SORTED ********"
+    p right_sorted
     return merge(left_sorted, right_sorted)
   end
 
   mergesort_iter(arr)
 end
 
-my_array = [2,5,6,7,3,2,4,5]
-p merge_sort(my_array) == [2, 2, 3, 4, 5, 5, 6, 7]
+my_array = [4,3,2,1]
+p merge_sort(my_array) == [1,2,3,4]
 
 
 #notes: O(nlog2n) is better thatn O(n^2), around
+
+# Notes
+# The easiest way to think about this is, we split the array in two, that is our left side and our right side
+# We now have to sides with 4 numbers, we repeat, we split the left side in two and the right side in two
+# This will sort our left side and right side, once sorted we merge the right side and the left side
