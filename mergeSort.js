@@ -1,4 +1,3 @@
-
 var mergeSort = function(array){
 
   var merge = function(leftSide, rightSide){
@@ -6,8 +5,8 @@ var mergeSort = function(array){
     var l = 0;
     var r = 0;
 
-    while ( r <= rightSide.length && l <= leftSide.length ) {
-      if (r >= rightSide.length || ((l < leftSide.length) && (leftSide[l] < rightSide[l])) ){
+    while (!( r >= rightSide.length && l >= leftSide.length )) {
+      if (r >= rightSide.length || ((l < leftSide.length) && (leftSide[l] < rightSide[r])) ){
         results.push(leftSide[l])
         l++
       }
@@ -16,18 +15,21 @@ var mergeSort = function(array){
         r++
       }
     };
+    console.log(results)
     return results
   }
 
   var spliter = function(arr){
-    if(arr.lenght <= 1){
+    if(arr.length <= 1){
       return arr
-    }
-    var mid = (arr.lenght/2) - 1
-    var leftSorted = spliter(arr.slice(0, mid))
-    var rightSorted = spliter(arr.slice(mid+1, -1))
+    };
+
+    var mid = (arr.length/2)
+    var leftSorted = spliter(arr.slice(0, mid));
+
+    var rightSorted = spliter(arr.slice(mid, arr.length));
     return merge(leftSorted,rightSorted);
-  }
+  };
 
   spliter(array);
 }
