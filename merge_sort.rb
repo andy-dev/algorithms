@@ -13,35 +13,23 @@ def merge_sort(arr)
       if r >= right_sorted.length || ((l < left_sorted.length) && (left_sorted[l] < right_sorted[r]))
         result << left_sorted[l]
         l += 1
-        p "Result added from left"
-        p result
       else
         result << right_sorted[r]
         r += 1
-        p "Result added from right"
-        p result
       end
     end
-    p "last result from merge"
-    p result
+
     return result
   end
 
   def mergesort_iter(array_sliced)
     return array_sliced if array_sliced.length <= 1
 
-    p "array sliced length"
-    p array_sliced.length
-
     mid = array_sliced.length/2 - 1
 
     left_sorted = mergesort_iter(array_sliced[0..mid])
-
-    p "*****LEFT SORTED ********"
-    p left_sorted
     right_sorted = mergesort_iter(array_sliced[mid+1..-1])
-    p "*****Right SORTED ********"
-    p right_sorted
+
     return merge(left_sorted, right_sorted)
   end
 
