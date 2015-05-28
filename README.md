@@ -1,2 +1,2 @@
 # algorithms
-playing with solving basic algorithms in ruby
+Algorithm playgrond --- Solving basic algorithms in ruby and Javascript
