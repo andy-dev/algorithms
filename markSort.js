@@ -23,4 +23,4 @@ var sortedResult = (function (){
   return result
 })();
 
-console.log(result)
+console.log(result);
