@@ -1,11 +1,11 @@
-def quick_sort(array)
-  return array if array.length <=1
+def quick_sort(arr)
+  return arr if arr.length <=1
 
   right_side = []
   left_side = []
-  pivot = array[0]
+  pivot = arr[0]
 
-  array.each_with_index do |x,index|
+  arr.each_with_index do |x,index|
     next if index == 0
     if x <= pivot
       left_side << x
