@@ -4,7 +4,7 @@
 # Array has integers
 # Output: array sorted in ascending order
 
-# We walk through the list put two adjacent elemetns in descending order until there are no longer swaps
+# We walk through the list put two adjacent elements in descending order until there are no longer swaps
 
 def bubble_sort(array)
   n = array.length
