@@ -1,5 +1,5 @@
 # The Problem:
-# source: http://www.sitepoint.com/sorting-algorithms-ruby/
+
 # The input to our algorithm will be an array of arbitraty length
 # Array has integers
 # Output: array sorted in ascending order
@@ -32,3 +32,5 @@ p bubble_sort(my_array) == [2, 2, 3, 4, 5, 5, 6, 7]
 # bubble sort is bad at scaling, the larger the input we see an increase in the running time of the algorithm
 # time O(n^2)
 # space O(1) the sort is in place so we dont use additional memory
+
+# extra, great source  http://www.sitepoint.com/sorting-algorithms-ruby/
