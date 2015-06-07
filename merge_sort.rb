@@ -40,7 +40,7 @@ my_array = [4,3,2,1]
 p merge_sort(my_array) == [1,2,3,4]
 
 
-#notes: O(nlog2n) is better thatn O(n^2), around
+#notes: O(nlog2n) is better that O(n^2)
 
 # Notes
 # The easiest way to think about this is, we split the array in two, that is our left side and our right side
