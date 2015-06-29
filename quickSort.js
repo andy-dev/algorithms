@@ -17,5 +17,7 @@ var myQuick = function quickSort(array){
   return myQuick(leftSide).concat(pivot, myQuick(rightSide))
 }
 
-myArray = [6]
+myArray = [6,5,4,3,2,1]
 console.log(myQuick(myArray))
+
+z
