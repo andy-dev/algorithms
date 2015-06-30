@@ -1,3 +1,6 @@
+#-------------------------
+# Solution 1
+#-------------------------
 
 def is_prime(num)
 
@@ -20,8 +23,10 @@ p is_prime(4) == false
 p is_prime(5) == true
 p is_prime(101) == true
 
+#-------------------------
+# Solution 2
+#-------------------------
 
-#another way of thinking about it
 #   counter = 3
 #   while counter < num
 #     if num%counter == 0
@@ -32,3 +37,16 @@ p is_prime(101) == true
 #   return true
 
 # end
+
+#-------------------------
+# Solution 3
+#-------------------------
+
+# def isPrime?(num)
+#   (2..Math.sqrt(num)).each { |i|
+#   if num % i == 0 && i < num
+#     return false
+#   end
+#   }
+#   true
+#   end
