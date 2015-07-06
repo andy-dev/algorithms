@@ -24,7 +24,7 @@ p "Wakey Wakey eggs and Bakey" if /AM/i =~ wakey_wakey
 def changer_sub(content)
 
   if content =~ /Superman/
-    puts "did you say Superman!!"
+    p "did you say Superman!!"
     p "no sir, I think you said:"
   end
 
@@ -32,3 +32,17 @@ def changer_sub(content)
 end
 
 changer_sub("Superman is my favorite superhero")
+
+
+# the star matches 0 or more of the thing that came just before it
+# [0-9a-f]* will match any number of hexadecimal
+# [aeiou]* will match any number of vowels
+# Andy.* will match any full names with Andy
+# .*Andy will match any last names with Andy
+
+star_test_one = "AB"
+star_test_two = "ABB"
+
+p "match Found" if /AB*/ =~ star_test_one
+p "match Found" if /AB*/ =~ star_test_two
+
