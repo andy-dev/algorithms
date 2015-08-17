@@ -6,8 +6,9 @@ var myQuick = function quickSort(array){
   var leftSide = []
   var rightSide = []
   var pivot = array[0]
+  var arrayLength = array.length
 
-  for (var i = 1; i < array.length; i++) {
+  for (var i = 1; i < arrayLength; i++) {
     if (array[i] < pivot) {
       leftSide.push(array[i]);
     } else {
@@ -20,4 +21,4 @@ var myQuick = function quickSort(array){
 myArray = [6,5,4,3,2,1]
 console.log(myQuick(myArray))
 
-z
+
